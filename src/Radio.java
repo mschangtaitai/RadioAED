@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public abstract class Radio implements RadioInterface {
+public class Radio implements RadioInterface {
 
     private boolean isOn = false;
     private boolean isAM = true;
@@ -9,8 +9,8 @@ public abstract class Radio implements RadioInterface {
     private double maxAM = 1610;
     private double minFM = 87.9;
     private double maxFM = 107.9;
-    private ArrayList<Integer> listAM = [];
-    private ArrayList<Double> listFM = [];
+    private ArrayList<Integer> listAM;
+    private ArrayList<Double> listFM;
 
 
     @Override
